@@ -15,7 +15,7 @@
       position: relative;
       width: 100%;
       height: auto;
-      size: contain;
+      
 
       }
     
@@ -24,13 +24,40 @@
          position: absolute;
     height: auto;
     width: 100%;
-    right: 30%;
-    margin-top: -25%;
+    
+    margin-top: -30%;
+    right: 15%;
+
 
 
      
 
    /*vanaja printer logo end*/
+  }
+
+  @media(max-width: 768px){
+header .box img{
+  height: 250px;
+}
+header .box .logo img{
+  margin-top: -190px;
+  width: 120%;
+}
+header .box .logo .box2 #download-button{
+  margin-bottom: 106px;
+}
+
+.carousel {
+  width: 190%;
+
+}
+
+
+
+
+
+
+
   }
 
 
@@ -104,7 +131,7 @@
             <div class="logo">
               <img src="images/logo.svg">
               <div class="box2">
-              <a class="waves-effect waves-light btn" href="https://www.google.co.in/maps/place/V+I+P+S+SHIKSHANA+SAMSTHE/@13.0499238,77.4915724,15z/data=!4m5!3m4!1s0x0:0xc7ca569a248ccadf!8m2!3d13.0494783!4d77.5098217" target="blank" id="download-button" style=" margin-top: -50%; margin-left: 40%; background-color: purple; color: white;" >Locate Our Store</a>
+              <a class="waves-effect waves-light btn" href="https://www.google.co.in/maps/place/V+I+P+S+SHIKSHANA+SAMSTHE/@13.0499238,77.4915724,15z/data=!4m5!3m4!1s0x0:0xc7ca569a248ccadf!8m2!3d13.0494783!4d77.5098217" target="blank" id="download-button" style=" margin-top:-30%; left: 39%;  background-color: purple; color: white;" > Store</a>
             
 
               </div>
@@ -156,7 +183,7 @@
      </div>
     <div class="carousel-item amber black-text" href="#two!">
 
-      <h2 style="font-family: Comic Sans MS">Card Prints For You </h2>
+      
       <img src="images/001.jpg">
     </div>
     <div class="carousel-item green black-text" href="#three!">
@@ -318,7 +345,7 @@
   var wScroll = $(this).scrollTop();
 
    $(".logo").css({
-    'transform' : 'translate(0px, '+ wScroll /0.65 +'%)'
+    'transform' : 'translate(0px, '+ wScroll /0.89 +'%)'
    });
 });
 </script>
